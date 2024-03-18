@@ -1,0 +1,25 @@
+{
+  "format": "custom",
+  "id": "home",
+  "label": "Home",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "banner_title": {
+        "type": "Text",
+        "config": {
+          "label": "banner_title",
+          "placeholder": ""
+        }
+      },
+      "banner_text": {
+        "type": "Text",
+        "config": {
+          "label": "banner_text",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}
