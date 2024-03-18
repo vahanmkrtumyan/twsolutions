@@ -1,19 +1,19 @@
-import Link from "next/link";
-import { createClient } from "@/prismicio";
+import Link from 'next/link';
+import { createClient } from '@/prismicio';
 
 export default async function Project1({ data }) {
-	const client = createClient();
+  const client = createClient();
 
-	const partners = await client.getAllByType("partners");
+  // const partners = await client.getAllByType("partners");
 
-	return (
-		<>
-			<section className='project-area'>
+  return (
+    <>
+      {/* <section className='project-area'>
 				<div className='container'>
 					<div className='row justify-content-center'>
 						<div className='col-xl-6 col-lg-7'>
 							<div className='section-title text-center mb-50 tg-heading-subheading animation-style3'>
-								{/* <span className='sub-title'>OUR PARTNERS</span> */}
+								
 								<h2 className='title tg-element-title'>{data.partner_title}</h2>
 							</div>
 						</div>
@@ -91,7 +91,7 @@ export default async function Project1({ data }) {
 						className='rotateme'
 					/>
 				</div>
-			</section>
-		</>
-	);
+			</section> */}
+    </>
+  );
 }

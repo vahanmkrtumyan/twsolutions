@@ -1,22 +1,22 @@
 {
   "format": "custom",
-  "id": "home",
-  "label": "Home",
+  "id": "main",
+  "label": "main",
   "repeatable": false,
   "status": true,
   "json": {
     "Main": {
-      "banner_title": {
+      "title": {
         "type": "Text",
         "config": {
-          "label": "banner_title",
+          "label": "title",
           "placeholder": ""
         }
       },
-      "banner_text": {
+      "subtitle": {
         "type": "Text",
         "config": {
-          "label": "banner_text",
+          "label": "subtitle",
           "placeholder": ""
         }
       }

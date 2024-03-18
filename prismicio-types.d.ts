@@ -5,45 +5,45 @@ import type * as prismic from "@prismicio/client";
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
 /**
- * Content for Home documents
+ * Content for main documents
  */
-interface HomeDocumentData {
+interface MainDocumentData {
   /**
-   * banner_title field in *Home*
+   * title field in *main*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: home.banner_title
+   * - **API ID Path**: main.title
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  banner_title: prismic.KeyTextField;
+  title: prismic.KeyTextField;
 
   /**
-   * banner_text field in *Home*
+   * subtitle field in *main*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: home.banner_text
+   * - **API ID Path**: main.subtitle
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  banner_text: prismic.KeyTextField;
+  subtitle: prismic.KeyTextField;
 }
 
 /**
- * Home document from Prismic
+ * main document from Prismic
  *
- * - **API ID**: `home`
+ * - **API ID**: `main`
  * - **Repeatable**: `false`
  * - **Documentation**: https://prismic.io/docs/custom-types
  *
  * @typeParam Lang - Language API ID of the document.
  */
-export type HomeDocument<Lang extends string = string> =
-  prismic.PrismicDocumentWithoutUID<Simplify<HomeDocumentData>, "home", Lang>;
+export type MainDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithoutUID<Simplify<MainDocumentData>, "main", Lang>;
 
-export type AllDocumentTypes = HomeDocument;
+export type AllDocumentTypes = MainDocument;
 
 declare module "@prismicio/client" {
   interface CreateClient {
@@ -54,6 +54,6 @@ declare module "@prismicio/client" {
   }
 
   namespace Content {
-    export type { HomeDocument, HomeDocumentData, AllDocumentTypes };
+    export type { MainDocument, MainDocumentData, AllDocumentTypes };
   }
 }
