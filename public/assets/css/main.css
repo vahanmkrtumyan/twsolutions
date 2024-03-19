@@ -1539,7 +1539,7 @@ textarea {
 }
 
 .tgmenu__nav .logo::after {
-	content: "Al Azariyah";
+	content: "TW Solutions";
 	margin-left: 10px;
 	color: var(--tg-color-dark-blue);
 }
@@ -3665,7 +3665,7 @@ textarea {
 }
 .about-list .list-wrap li {
 	padding: 0 15px;
-	width: 50%;
+	width: 90%;
 	flex: 0 0 auto;
 	display: -webkit-box;
 	display: -moz-box;
@@ -3682,7 +3682,7 @@ textarea {
 }
 @media (max-width: 991.98px) {
 	.about-list .list-wrap li {
-		width: 50%;
+		width: 80%;
 	}
 }
 @media (max-width: 767.98px) {

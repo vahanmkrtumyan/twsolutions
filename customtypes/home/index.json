@@ -1,0 +1,110 @@
+{
+  "id": "home",
+  "label": "home",
+  "format": "page",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "bannerimage": {
+        "type": "Image",
+        "config": {
+          "label": "bannerImage",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "banner_subtitle": {
+        "type": "Text",
+        "config": {
+          "label": "banner_subtitle",
+          "placeholder": ""
+        }
+      },
+      "banner_title": {
+        "type": "Text",
+        "config": {
+          "label": "banner_title",
+          "placeholder": ""
+        }
+      },
+      "banner_text": {
+        "type": "Text",
+        "config": {
+          "label": "banner_text",
+          "placeholder": ""
+        }
+      },
+      "goal_subtitle": {
+        "type": "Text",
+        "config": {
+          "label": "goal_subTitle",
+          "placeholder": ""
+        }
+      },
+      "goal_title": {
+        "type": "Text",
+        "config": {
+          "label": "goal_title",
+          "placeholder": ""
+        }
+      },
+      "goal_text": {
+        "type": "Text",
+        "config": {
+          "label": "goal_text",
+          "placeholder": ""
+        }
+      },
+      "goal_image": {
+        "type": "Image",
+        "config": {
+          "label": "goal_image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "partner_title": {
+        "type": "Text",
+        "config": {
+          "label": "partner_title",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_description": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        },
+        "type": "Text"
+      },
+      "meta_image": {
+        "config": {
+          "constraint": {
+            "height": 1260,
+            "width": 2400
+          },
+          "label": "Meta Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
+      }
+    }
+  }
+}

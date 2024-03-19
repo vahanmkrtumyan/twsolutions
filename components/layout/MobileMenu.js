@@ -37,11 +37,11 @@ export default function MobileMenu({ handleMobileMenu }) {
 						About As
 					</Link>
 				</li>
-				<li className={pathName === "/services" ? "active" : ""}>
+				{/* <li className={pathName === "/services" ? "active" : ""}>
 					<Link href='/services' onClick={handleMobileMenu}>
 						Products & Services
 					</Link>
-				</li>
+				</li> */}
 				<li className={pathName === "/partners" ? "active" : ""}>
 					<Link href='/partners' onClick={handleMobileMenu}>
 						Partners

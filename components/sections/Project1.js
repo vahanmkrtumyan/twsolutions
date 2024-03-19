@@ -1,20 +1,48 @@
-import Link from 'next/link';
-import { createClient } from '@/prismicio';
+import Link from "next/link";
 
-export default async function Project1({ data }) {
-  const client = createClient();
+const PARTNER_DATA = [
+	{
+		title: "Procurement Solutions",
+		subtext1: "Sourcing Goods:",
+		subtext2: "Supplier Vetting:",
+		text1:
+			" We specialize in seeking the goods our clients require, meticulously searching both local and global markets to match their specifications.",
+		text2:
+			" Finding reputable and reliable suppliers is crucial. We conduct rigorous vetting processes to ensure the highest quality standards.",
+		url: "/assets/img/img1.jpg",
+	},
+	{
+		title: "Global Trade Expertise",
+		subtext1: "International Sales:",
+		subtext2: "Export Services:",
+		text1:
+			" Utilizing our expertise, we purchase goods and facilitate seamless transactions for clients looking to sell abroad.",
+		text2:
+			" We assist in navigating the complexities of exporting goods to various international markets.",
+		url: "/assets/img/img2.jpg",
+	},
+	{
+		title: "Local Supplier Engagement",
+		subtext1: "Negotiation and Procurement:",
+		subtext2: "Supply Chain Management:",
+		text1:
+			" Engaging with local suppliers efficiently and effectively, negotiating the best deals on our clients’ behalf.",
+		text2:
+			" We optimize the supply chain process, ensuring timely delivery and cost-effective solutions.",
+		url: "/assets/img/img3.jpg",
+	},
+];
 
-  // const partners = await client.getAllByType("partners");
-
-  return (
-    <>
-      {/* <section className='project-area'>
+export default function Project1() {
+	return (
+		<>
+			<section className='project-area'>
 				<div className='container'>
 					<div className='row justify-content-center'>
 						<div className='col-xl-6 col-lg-7'>
 							<div className='section-title text-center mb-50 tg-heading-subheading animation-style3'>
-								
-								<h2 className='title tg-element-title'>{data.partner_title}</h2>
+								{/* <span className='sub-title'>OUR PARTNERS</span> */}
+								<h2 className='title tg-element-title'>Our Services Include</h2>
 							</div>
 						</div>
 					</div>
@@ -22,25 +50,41 @@ export default async function Project1({ data }) {
 				<div className='project-item-wrap'>
 					<div className='container custom-container-two'>
 						<div className='row justify-content-center'>
-							{partners.map((item, index) => {
+							{PARTNER_DATA.map((item, index) => {
 								return (
-									<div key={index} className='col-xl-3 col-md-6'>
+									<div key={index} className='mt-3 col-xl-3 col-md-6'>
 										<div className='project-item'>
 											<div className='project-thumb'>
 												<Link href='/project-details'>
-													<img src={item?.data?.partner_logo?.url} alt='' />
+													<img src={item.url} alt='' />
 												</Link>
 											</div>
 											<div className='project-content'>
 												<div className='left-side-content'>
 													<h4 className='title'>
-														<Link href='/project-details'>
-															{item?.data?.partner_name}
-														</Link>
+														<p style={{ fontSize: "16px", fontWeight: "bold" }}>
+															{item.title}
+														</p>
 													</h4>
-													<span>{item?.data?.partner_description}</span>
+													<span className='mt-2'>
+														<span
+															style={{ color: "#3e4073", display: "inline" }}
+														>
+															*{item.subtext1}
+														</span>
+														{item.text1}
+													</span>
+													<span className='mt-2'>
+														<span
+															style={{ color: "#3e4073", display: "inline" }}
+														>
+															*{item.subtext2}
+														</span>
+														{item.text2}
+													</span>
+													<span></span>
 												</div>
-												<div className='link-arrow'>
+												{/* <div className='link-arrow'>
 													<Link href='/partners'>
 														<svg
 															xmlns='http://www.w3.org/2000/svg'
@@ -61,14 +105,14 @@ export default async function Project1({ data }) {
 															/>
 														</svg>
 													</Link>
-												</div>
+												</div> */}
 											</div>
 										</div>
 									</div>
 								);
 							})}
 						</div>
-						<div className='row justify-content-center'>
+						{/* <div className='row justify-content-center'>
 							<div className='col-12'>
 								<div className='project-content-bottom'>
 									<Link href='/partners' className='btn'>
@@ -76,7 +120,7 @@ export default async function Project1({ data }) {
 									</Link>
 								</div>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 				<div className='project-shape-wrap'>
@@ -91,7 +135,7 @@ export default async function Project1({ data }) {
 						className='rotateme'
 					/>
 				</div>
-			</section> */}
-    </>
-  );
+			</section>
+		</>
+	);
 }

@@ -1,12 +1,11 @@
 import Link from "next/link";
 
-export default function Banner1({ data }) {
-	const { banner_subtitle, banner_title, banner_text, bannerimage } = data;
+export default function Banner1() {
 	return (
 		<>
 			<section
 				className='banner-area banner-bg'
-				data-background={bannerimage.url}
+				data-background={"/assets/img/img1.jpg"}
 			>
 				<div className='container'>
 					<div className='row'>
@@ -17,13 +16,26 @@ export default function Banner1({ data }) {
 									data-aos='fade-up'
 									data-aos-delay={0}
 								>
-									{banner_subtitle}
+									{"TW Solutions"}
 								</span>
-								<h2 className='title' data-aos='fade-up' data-aos-delay={200}>
-									{banner_title}
+								<h2
+									style={{ color: "#FFF" }}
+									className='title'
+									data-aos='fade-up'
+									data-aos-delay={200}
+								>
+									{"TradeWise solutions"}
 								</h2>
-								<p data-aos='fade-up' data-aos-delay={400}>
-									{banner_text}
+								<p
+									style={{ color: "#FFF" }}
+									data-aos='fade-up'
+									data-aos-delay={400}
+								>
+									At TradeWise solutions, we value the significance of
+									compliance and transparency in fostering strong, enduring
+									relationships. As part of our commitment to upholding
+									regulatory standards and establishing trust, we are pleased to
+									submit our company profile for KYC purposes.
 								</p>
 								<Link
 									href='/about'

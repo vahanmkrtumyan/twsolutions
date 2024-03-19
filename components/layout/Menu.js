@@ -14,9 +14,9 @@ export default function Menu() {
 				<li className={pathName === "/about" ? "active" : ""}>
 					<Link href='about'>About As</Link>
 				</li>
-				<li className={pathName === "/services" ? "active" : ""}>
+				{/* <li className={pathName === "/services" ? "active" : ""}>
 					<Link href='/services'>Products & Services</Link>
-				</li>
+				</li> */}
 				<li className={pathName === "/partners" ? "active" : ""}>
 					<Link href='/partners'>Partners</Link>
 				</li>

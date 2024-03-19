@@ -11,9 +11,19 @@ export default function Footer1() {
 								<div className='col-lg-12'>
 									<div className='text-center'>
 										<p>
-											Copyright © <Link href='/'>Azariyah</Link> | All Right
-											Reserved
+											We recognize the importance of a healthy KYC process in
+											building permanent relationships with financial
+											institutions such as{" "}
+											<span style={{ color: "#c90101", fontWeight: "bold" }}>
+												YOUR BANK
+											</span>
+											. As we attempt to maintain the highest standards of
+											compliance and transparency, we trust that this profile
+											provides a comprehensive overview of our commitment to
+											being a reputable and reliable partner.
 										</p>
+
+										<p>Copyright © TW Solutions / All Right Reserved</p>
 									</div>
 								</div>
 							</div>
