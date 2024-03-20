@@ -15,6 +15,7 @@ import Team1 from "@/components/sections/Team1";
 import { createClient } from "@/prismicio";
 import Partners from "./partners/page";
 import Abilities from "@/components/sections/Abilities";
+import Head from "next/head";
 
 export const metadata = {
 	title: "TW Solutions",
@@ -23,6 +24,9 @@ export const metadata = {
 export default function Home() {
 	return (
 		<>
+			<Head>
+				<link rel='icon' href='/favicon.ico' />
+			</Head>
 			<Layout headerStyle={1} footerStyle={1} transparent>
 				<Banner1 />
 				<About1 />

@@ -25,21 +25,18 @@ export default async function Header1({
 								<ul className='tg-header__top-info left-side list-wrap'>
 									<li>
 										<i className='flaticon-phone-call' />
-										{"contact_phone" && (
-											<Link href={"contact_phone"}>{"contact_phone"}</Link>
-										)}
-										{"second_contact_phone" && (
+										<span>+971504305140</span>
+										{/* {"second_contact_phone" && (
 											<Link href={"contact_phone"}>
 												{"second_contact_phone"}
 											</Link>
-										)}
+										)} */}
 									</li>
-									{"contact_address" && (
-										<li>
-											<i className='flaticon-pin' />
-											{"contact_address"}
-										</li>
-									)}
+									<li>
+										<i className='flaticon-pin' />
+										BCW, Office number 1129, Floor 11, Jafza One, Jebel Ali Free
+										Zone, Dubai, U.A.E. Formation No. 2308831
+									</li>
 								</ul>
 							</div>
 							<div className='col-lg-6'>
@@ -47,15 +44,18 @@ export default async function Header1({
 									<li>
 										<i className='flaticon-envelope' />
 										{"contact_email" && (
-											<Link href='mailto:info@apexa.com'>
-												{"contact_email"}
+											<Link href='mailto:info@twsolutions.ae'>
+												info@twsolutions.ae
 											</Link>
 										)}
 									</li>
 									{"working_hours" && (
 										<li>
-											<i className='flaticon-time' />
-											{"working_hours"}
+											<i className='flaticon-envelope' />
+
+											<Link href='mailto:hayktadevosyan@twsolutions.ae'>
+												hayktadevosyan@twsolutions.ae
+											</Link>
 										</li>
 									)}
 								</ul>

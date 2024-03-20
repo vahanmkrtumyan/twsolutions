@@ -66,19 +66,19 @@ export default function Project1() {
 															{item.title}
 														</p>
 													</h4>
-													<span className='mt-2'>
+													<span style={{ color: "#15176C" }} className='mt-2'>
 														<span
-															style={{ color: "#3e4073", display: "inline" }}
+															style={{ color: "#F7A400", display: "inline" }}
 														>
-															*{item.subtext1}
+															*{item.subtext1}{" "}
 														</span>
 														{item.text1}
 													</span>
-													<span className='mt-2'>
+													<span style={{ color: "#15176C" }} className='mt-2'>
 														<span
-															style={{ color: "#3e4073", display: "inline" }}
+															style={{ color: "F7A400", display: "inline" }}
 														>
-															*{item.subtext2}
+															*{item.subtext2}{" "}
 														</span>
 														{item.text2}
 													</span>

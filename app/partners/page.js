@@ -26,7 +26,7 @@ export default function Partners() {
 								<div className='col-xl-6'>
 									<div className='left-side-content pt-20'>
 										<h4 className='title mt-20'>Business Relationships:</h4>
-										<span className='mt-30'>
+										<span style={{ color: "#15176C" }} className='mt-30'>
 											Impact Trade FZ-LLC, Registration number 0000004033035,
 											Registration date 08-04-2021, License Number 47005061,
 											5025708, 5023948, Customs code AE-6010964, Manager
@@ -62,7 +62,7 @@ export default function Partners() {
 								<div className='col-xl-6'>
 									<div className='left-side-content pt-20'>
 										<h4 className='title mt-20'>Business Relationships:</h4>
-										<span className='mt-30'>
+										<span style={{ color: "#15176C" }} className='mt-30'>
 											{/* {item?.data?.partner_full_description} */}
 										</span>
 									</div>

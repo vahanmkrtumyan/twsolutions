@@ -9,6 +9,7 @@ import "/public/assets/css/swiper-bundle.css";
 import "/public/assets/css/aos.css";
 import "/public/assets/css/default.css";
 import "/public/assets/css/main.css";
+import Head from "next/head";
 
 const inter = Inter({
 	weight: ["300", "400", "500", "600", "700"],
@@ -30,6 +31,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
+			<Head>
+				<link rel='icon' href='/favicon.ico' />
+			</Head>
 			<body className={`${inter.variable} ${outfit.variable}`}>{children}</body>
 		</html>
 	);

@@ -1,0 +1,29 @@
+.table_wrapper {
+	min-width: 1200px;
+	overflow-x: scroll;
+}
+.table {
+	width: 100%;
+	min-width: 500px;
+	overflow: scroll;
+	border-collapse: collapse;
+	thead th {
+		background-color: #f2f2f2;
+		border: 1px solid #dddddd;
+		padding: 8px;
+		text-align: left;
+	}
+
+	tbody td {
+		border: 1px solid #dddddd;
+		padding: 8px;
+	}
+
+	tbody tr:nth-child(even) {
+		background-color: #f9f9f9;
+	}
+
+	tbody tr:hover {
+		background-color: #e2e2e2;
+	}
+}

@@ -1539,7 +1539,6 @@ textarea {
 }
 
 .tgmenu__nav .logo::after {
-	content: "TW Solutions";
 	margin-left: 10px;
 	color: var(--tg-color-dark-blue);
 }
