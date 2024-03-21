@@ -55,9 +55,7 @@ export default function Project1() {
 									<div key={index} className='mt-3 col-xl-3 col-md-6'>
 										<div className='project-item'>
 											<div className='project-thumb'>
-												<Link href='/project-details'>
-													<img src={item.url} alt='' />
-												</Link>
+												<img src={item.url} alt='' />
 											</div>
 											<div className='project-content'>
 												<div className='left-side-content'>
@@ -82,7 +80,6 @@ export default function Project1() {
 														</span>
 														{item.text2}
 													</span>
-													<span></span>
 												</div>
 												{/* <div className='link-arrow'>
 													<Link href='/partners'>
