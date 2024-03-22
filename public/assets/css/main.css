@@ -14736,6 +14736,19 @@ blockquote p {
 .pl-0 {
   padding-left: 0 !important;
 }
+
+.partner-images {
+  text-align: center;
+
+  img {
+    margin: 0 20px;
+  }
+}
+
+.partner-image {
+  height: 150px;
+}
+
 .partner-image-border-fix {
   border-radius: 12px 0 0 12px;
   padding: 10px;

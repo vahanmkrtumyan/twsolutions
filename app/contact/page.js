@@ -66,77 +66,6 @@ export default function Contact() {
                     <div className="contact__info">
                       <ul className="list-wrap">
                         <li>
-                          <div className="content">
-                            <h4 className="title">Company Info</h4>
-                            <p>
-                              Company name: Tradewise Solutions General Trading
-                              FZE
-                              <br /> Legal status: FZE (Limited Liability)
-                              <br />
-                              License number: 70929196 <br />
-                              Registration number: 69445435
-                              <br />
-                              <br />
-                              Registered/office address: BCW, Office number
-                              1129, Floor 11, Jafza One, Jebel Ali Free Zone,
-                              Dubai, U.A.E.
-                              <br />
-                              <br /> Bank information: Bank name: Banque Misr,
-                              Dubai Branch, branch address: City Center Tower,
-                              port Saeed, Deira, Dubai P.O. Box: 1502
-                              <br />
-                              <br />
-                              Activities: Company with a wide range of trading
-                              activities implementing on both local and global
-                              markets.
-                            </p>
-                          </div>
-                        </li>
-                        <li>
-                          <div className={styles.table_wrapper}>
-                            <table className={styles.table} border="1">
-                              <thead>
-                                <tr>
-                                  <th>ACCOUNT NAME</th>
-                                  <th>ACCOUNT NO.</th>
-                                  <th>IBAN NO.</th>
-                                  <th>CURRENCY</th>
-                                  <th>SWIFT CODE</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>
-                                    TRADEWISE SOLUTIONS GENERAL TRADING FZE
-                                  </td>
-                                  <td>80309100036533</td>
-                                  <td>AE490150080309100036533</td>
-                                  <td>AED</td>
-                                  <td>BMISAEAAXXX</td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    TRADEWISE SOLUTIONS GENERAL TRADING FZE
-                                  </td>
-                                  <td>80309200027939</td>
-                                  <td>AE100150080309200027939</td>
-                                  <td>USD</td>
-                                  <td>BMISAEAAXXX</td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    TRADEWISE SOLUTIONS GENERAL TRADING FZE
-                                  </td>
-                                  <td>80315200028776</td>
-                                  <td>AE330150080315200028776</td>
-                                  <td>EUR</td>
-                                  <td>BMISAEAAXXX</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </li>
-                        <li>
                           <div className="icon">
                             <i className="flaticon-pin" />
                           </div>
@@ -173,6 +102,19 @@ export default function Contact() {
                             <Link href="mailto:info@twsolutions.ae">
                               info@twsolutions.ae
                             </Link>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="content">
+                            <h4 className="title">Company Info</h4>
+                            <p>
+                              Company name: Tradewise Solutions General Trading
+                              FZE
+                              <br /> Legal status: FZE (Limited Liability)
+                              <br />
+                              License number: 70929196 <br />
+                              Registration number: 69445435
+                            </p>
                           </div>
                         </li>
                       </ul>

@@ -26,7 +26,6 @@ export default function About() {
                 <div className="col-lg-6">
                   <div className="about__content-four">
                     <div className="section-title mb-30">
-                      <span className="sub-title">now a little bit </span>
                       <h2 className="title">About Us</h2>
                     </div>
                     <p>
