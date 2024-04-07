@@ -5,7 +5,7 @@ export default function Banner1() {
     <>
       <section
         className="banner-area banner-bg"
-        data-background={'/assets/img/img1.jpg'}
+        data-background="/assets/img/img4.jpg"
       >
         <div className="container">
           <div className="row">

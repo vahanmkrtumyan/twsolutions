@@ -2350,7 +2350,7 @@ textarea {
 ===============================*/
 .banner-bg {
   background-size: cover;
-  background-position: center;
+  background-position-y: top;
   min-height: 870px;
   display: -webkit-box;
   display: -moz-box;

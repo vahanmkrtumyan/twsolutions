@@ -8,6 +8,7 @@ import Banner1 from '@/components/sections/Banner1';
 // import Consulting1 from "@/components/sections/Consulting1";
 // import Counter1 from "@/components/sections/Counter1";
 import Project1 from '@/components/sections/Project1';
+import ServisesNew from '@/components/sections/ServicesNew';
 // import Request1 from "@/components/sections/Request1";
 // import Services1 from "@/components/sections/Services1";
 // import Testimonial1 from "@/components/sections/Testimonial1";
@@ -34,7 +35,8 @@ export default function Home() {
         {/* <Services1 /> */}
         {/* <Choose1 /> */}
         {/* <Counter1 /> */}
-        <Project1 />
+        <ServisesNew />
+        {/* <Project1 /> */}
         {/* <Request1 /> */}
         {/* <Team1 /> */}
         {/* <Consulting1 /> */}
