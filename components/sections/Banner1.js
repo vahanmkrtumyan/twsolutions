@@ -40,7 +40,7 @@ export default function Banner1() {
                   Read More
                 </Link>
               </div>
-              <div className="banner-shape">
+              {/* <div className="banner-shape">
                 <img
                   src="/assets/img/banner/banner_shape01.png"
                   alt=""
@@ -51,7 +51,7 @@ export default function Banner1() {
                   alt=""
                   className="ribbonRotate"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
           {/* <div className="banner-social">

@@ -1332,6 +1332,17 @@ textarea {
 @media (max-width: 991.98px) {
   .tg-header__area {
     padding: 25px 0;
+    background-color: white;
+  }
+}
+
+.mobile-logo {
+  height: 20px;
+}
+
+@media (min-width: 900px) {
+  .mobile {
+    display: none;
   }
 }
 .tg-header__area-two {

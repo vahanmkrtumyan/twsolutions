@@ -36,8 +36,9 @@ export default async function Header1({
                   </li>
                   <li>
                     <i className="flaticon-pin" />
-                    BCW, Office number 1129, Floor 11, Jafza One, Jebel Ali Free
-                    Zone, Dubai, U.A.E.
+                    TRADEWISE SOLUTIONS GENERAL TRADING FZE
+                    <br /> BCW, Office number 1129, Floor 11, Jafza One, Jebel
+                    Ali Free Zone, Dubai, U.A.E.
                   </li>
                 </ul>
               </div>
@@ -71,6 +72,15 @@ export default async function Header1({
                   <nav className="tgmenu__nav">
                     <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
                       <Menu />
+                    </div>
+                    <div className="mobile">
+                      <Link href="/">
+                        <img
+                          className="mobile-logo"
+                          src="/assets/img/logo/logo.png"
+                          alt="Logo"
+                        />
+                      </Link>
                     </div>
                     <div className="tgmenu__action d-none d-md-block">
                       <ul className="list-wrap">
@@ -207,14 +217,6 @@ export default async function Header1({
                         <img src="/assets/img/logo/logo.png" alt="Logo" />
                       </Link>
                     </div>
-                    <div className="tgmobile__search">
-                      <form action="#">
-                        <input type="text" placeholder="Search here..." />
-                        <button>
-                          <i className="fas fa-search" />
-                        </button>
-                      </form>
-                    </div>
                     <div className="tgmobile__menu-outer">
                       <MobileMenu handleMobileMenu={handleMobileMenu} />
                     </div>
@@ -222,12 +224,12 @@ export default async function Header1({
                       <div className="contact-info">
                         <ul className="list-wrap">
                           <li>
-                            <Link href="mailto:info@apexa.com">
-                              info@apexa.com
+                            <Link href="mailto:info@twsolutions.ae">
+                              info@twsolutions.ae
                             </Link>
                           </li>
                           <li>
-                            <Link href="tel:0123456789">+123 888 9999</Link>
+                            <Link href="tel:0123456789">+971504305140</Link>
                           </li>
                         </ul>
                       </div>
