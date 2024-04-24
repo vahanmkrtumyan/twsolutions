@@ -6,6 +6,7 @@ export default function Banner1() {
       <section
         className="banner-area banner-bg"
         data-background="/assets/img/img4.jpg"
+        style={{ boxShadow: 'inset 0 0 0 2000px rgb(20 41 66 / 57%)' }}
       >
         <div className="container">
           <div className="row">
@@ -20,7 +21,9 @@ export default function Banner1() {
                   TRADEWISE SOLUTIONS
                 </h2>
                 <p
-                  style={{ color: '#FFF' }}
+                  style={{
+                    color: '#FFF'
+                  }}
                   data-aos="fade-up"
                   data-aos-delay={400}
                 >
