@@ -1,29 +1,29 @@
-"use client";
+'use client';
 
-import { usePathname } from "next/navigation";
-import Link from "next/link";
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 export default function Menu() {
-	const pathName = usePathname();
-	return (
-		<>
-			<ul className='navigation'>
-				<li className={pathName === "/" ? "active" : ""}>
-					<Link href='/'>Home</Link>
-				</li>
-				<li className={pathName === "/about" ? "active" : ""}>
-					<Link href='about'>About As</Link>
-				</li>
-				{/* <li className={pathName === "/services" ? "active" : ""}>
+  const pathName = usePathname();
+  return (
+    <>
+      <ul className="navigation">
+        <li className={pathName === '/' ? 'active' : ''}>
+          <Link href="/">Home</Link>
+        </li>
+        <li className={pathName === '/about' ? 'active' : ''}>
+          <Link href="about">About us</Link>
+        </li>
+        {/* <li className={pathName === "/services" ? "active" : ""}>
 					<Link href='/services'>Products & Services</Link>
 				</li> */}
-				<li className={pathName === "/partners" ? "active" : ""}>
-					<Link href='/partners'>Partners</Link>
-				</li>
-				<li className={pathName === "/contact" ? "active" : ""}>
-					<Link href='/contact'>Contacts</Link>
-				</li>
-				{/* <li className='ae-item-has-children'>
+        <li className={pathName === '/partners' ? 'active' : ''}>
+          <Link href="/partners">Partners</Link>
+        </li>
+        <li className={pathName === '/contact' ? 'active' : ''}>
+          <Link href="/contact">Contacts</Link>
+        </li>
+        {/* <li className='ae-item-has-children'>
 					<Link href='#'>About Us</Link>
 					<ul className='sub-menu'>
 						<li>
@@ -43,7 +43,7 @@ export default function Menu() {
 						</li>
 					</ul>
 				</li> */}
-				{/* <li className='menu-item-has-children'>
+        {/* <li className='menu-item-has-children'>
 					<Link href='#'>Services</Link>
 					<ul className='sub-menu'>
 						<li>
@@ -78,7 +78,7 @@ export default function Menu() {
 						</li>
 					</ul>
 				</li> */}
-				{/* <li className='menu-item-has-children'>
+        {/* <li className='menu-item-has-children'>
 					<Link href='#'>Pages</Link>
 					<ul className='sub-menu'>
 						<li>
@@ -127,7 +127,7 @@ export default function Menu() {
 				<li>
 					<Link href='/contact'>contacts</Link>
 				</li> */}
-			</ul>
-		</>
-	);
+      </ul>
+    </>
+  );
 }
